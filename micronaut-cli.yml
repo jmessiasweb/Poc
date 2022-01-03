@@ -2,5 +2,5 @@ applicationType: default
 defaultPackage: br.com.poc
 testFramework: junit
 sourceLanguage: kotlin
-buildTool: gradle_kotlin
-features: [annotation-api, app-name, cassandra, data, data-jpa, gradle, http-client, jdbc-hikari, junit, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, mockito, netty-server, postgres, properties, readme, shade, testcontainers]
+buildTool: gradle
+features: [app-name, gradle, http-client, junit, kotlin, kotlin-application, logback, netty-server, readme, shade, yaml]
