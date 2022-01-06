@@ -1,0 +1,42 @@
+micronaut:
+  server:
+    port: 8081
+  application:
+    name: project
+
+#Data base
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 1234
+    schema-generate: none
+    dialect: POSTGRES
+jpa.default.properties.hibernate.hbm2ddl.auto: none
+
+#Redis Cache
+redis:
+  uri: redis://${redis_host:localhost}
+  enabled: true
+  caches:
+    acumulo:
+      charset: UTF-8
+      value-serializer: io.micronaut.jackson.serialize.JacksonObjectSerializer
+      expire-after-write: 1h
+
+#Cron Main Job
+main:
+  job:
+    cron:
+    #value: "0 37 15 1/1 * ?"
+
+#Cron generate csv Job
+job:
+  cron:
+    csv:
+      value: "0 39 15 1/1 * ?"
+
+# Factor division
+division:
+  factor: 5
