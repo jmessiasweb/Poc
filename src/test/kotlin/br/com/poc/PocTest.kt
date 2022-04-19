@@ -1,9 +1,10 @@
 package br.com.poc
+
 import io.micronaut.runtime.EmbeddedApplication
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
-import jakarta.inject.Inject
+import javax.inject.Inject
 
 @MicronautTest
 class PocTest {

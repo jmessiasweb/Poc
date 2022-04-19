@@ -25,6 +25,7 @@ redis:
       value-serializer: io.micronaut.jackson.serialize.JacksonObjectSerializer
       expire-after-write: 1h
 
+
 #Cron Main Job
 main:
   job:
